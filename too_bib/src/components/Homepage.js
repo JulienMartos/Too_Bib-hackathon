@@ -6,10 +6,12 @@ function Homepage() {
   return (
     <div className="container-fluid">
       <div className="row">
-        <Link to={"/questionnaire"}>
-          <button onClick="">j'ai besoin d'aide</button>
+        <Link to={"/questionnaires"}>
+          <button>j'ai besoin d'aide</button>
         </Link>
-        <button>simulation</button>
+        <Link to={""}>
+          <button>simulation</button>
+        </Link>
       </div>
     </div>
   );

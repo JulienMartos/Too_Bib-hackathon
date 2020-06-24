@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import ListQuiz from "./components/ListQuiz";
 import Homepage from "./components/Homepage";
+import Brulure from "./components/Brulure";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -13,7 +14,8 @@ function App() {
           <Header />
           <main>
             <Route exact path="/" component={Homepage} />
-            <Route path="/Questionnaire" component={ListQuiz} />
+            <Route path="/Questionnaires" component={ListQuiz} />
+            <Route path="/Questionnaires/brulure" component={Brulure} />
           </main>
         </>
       </Switch>
